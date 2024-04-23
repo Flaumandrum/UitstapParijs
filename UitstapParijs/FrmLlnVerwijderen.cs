@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UitstapParijs
 {
-    public partial class Form1 : Form
+    public partial class FrmLlnVerwijderen : Form
     {
-        public Form1()
+        public FrmLlnVerwijderen()
         {
             InitializeComponent();
         }

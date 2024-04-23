@@ -46,11 +46,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmKeuzeAanpassen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmKeuzeAanpassen.Designer.cs">
+      <DependentUpon>FrmKeuzeAanpassen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKeuzeToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKeuzeToevoegen.Designer.cs">
+      <DependentUpon>FrmKeuzeToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLlnAanpassen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLlnAanpassen.Designer.cs">
+      <DependentUpon>FrmLlnAanpassen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLlnToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLlnToevoegen.Designer.cs">
+      <DependentUpon>FrmLlnToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLlnVerwijderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLlnVerwijderen.Designer.cs">
+      <DependentUpon>FrmLlnVerwijderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuLeerlingen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuLeerlingen.Designer.cs">
+      <DependentUpon>FrmMenuLeerlingen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuTonen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuTonen.Designer.cs">
+      <DependentUpon>FrmMenuTonen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuUitstappen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuUitstappen.Designer.cs">
+      <DependentUpon>FrmMenuUitstappen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStartmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStartmenu.Designer.cs">
+      <DependentUpon>FrmStartmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTonen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTonen.Designer.cs">
+      <DependentUpon>FrmTonen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUitstapBeheren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUitstapBeheren.Designer.cs">
+      <DependentUpon>FrmUitstapBeheren.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
