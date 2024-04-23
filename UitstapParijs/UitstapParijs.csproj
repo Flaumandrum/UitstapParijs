@@ -114,6 +114,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmKeuzeAanpassen.resx">
+      <DependentUpon>FrmKeuzeAanpassen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKeuzeToevoegen.resx">
+      <DependentUpon>FrmKeuzeToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLlnAanpassen.resx">
+      <DependentUpon>FrmLlnAanpassen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLlnToevoegen.resx">
+      <DependentUpon>FrmLlnToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLlnVerwijderen.resx">
+      <DependentUpon>FrmLlnVerwijderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuLeerlingen.resx">
+      <DependentUpon>FrmMenuLeerlingen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuTonen.resx">
+      <DependentUpon>FrmMenuTonen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuUitstappen.resx">
+      <DependentUpon>FrmMenuUitstappen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStartmenu.resx">
+      <DependentUpon>FrmStartmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTonen.resx">
+      <DependentUpon>FrmTonen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUitstapBeheren.resx">
+      <DependentUpon>FrmUitstapBeheren.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
