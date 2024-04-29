@@ -76,28 +76,22 @@
     <Compile Include="FrmLlnVerwijderen.Designer.cs">
       <DependentUpon>FrmLlnVerwijderen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuLeerlingen.cs">
+    <Compile Include="Keuzemenus\FrmMenuLeerlingen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuLeerlingen.Designer.cs">
+    <Compile Include="Keuzemenus\FrmMenuLeerlingen.Designer.cs">
       <DependentUpon>FrmMenuLeerlingen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenuTonen.cs">
+    <Compile Include="Keuzemenus\FrmMenuUitstappen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenuTonen.Designer.cs">
-      <DependentUpon>FrmMenuTonen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMenuUitstappen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMenuUitstappen.Designer.cs">
+    <Compile Include="Keuzemenus\FrmMenuUitstappen.Designer.cs">
       <DependentUpon>FrmMenuUitstappen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmStartmenu.cs">
+    <Compile Include="Keuzemenus\FrmStartmenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStartmenu.Designer.cs">
+    <Compile Include="Keuzemenus\FrmStartmenu.Designer.cs">
       <DependentUpon>FrmStartmenu.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTonen.cs">
@@ -129,16 +123,13 @@
     <EmbeddedResource Include="FrmLlnVerwijderen.resx">
       <DependentUpon>FrmLlnVerwijderen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuLeerlingen.resx">
+    <EmbeddedResource Include="Keuzemenus\FrmMenuLeerlingen.resx">
       <DependentUpon>FrmMenuLeerlingen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuTonen.resx">
-      <DependentUpon>FrmMenuTonen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenuUitstappen.resx">
+    <EmbeddedResource Include="Keuzemenus\FrmMenuUitstappen.resx">
       <DependentUpon>FrmMenuUitstappen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStartmenu.resx">
+    <EmbeddedResource Include="Keuzemenus\FrmStartmenu.resx">
       <DependentUpon>FrmStartmenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTonen.resx">
