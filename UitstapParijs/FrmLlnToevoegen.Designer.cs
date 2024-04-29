@@ -28,35 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblNaamLeerling = new System.Windows.Forms.Label();
+            this.txtNaamLeerling = new System.Windows.Forms.TextBox();
+            this.btnAnnuleren = new System.Windows.Forms.Button();
+            this.btnToevoegen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNaamLeerling
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblNaamLeerling.AutoSize = true;
+            this.lblNaamLeerling.Location = new System.Drawing.Point(22, 27);
+            this.lblNaamLeerling.Name = "lblNaamLeerling";
+            this.lblNaamLeerling.Size = new System.Drawing.Size(137, 24);
+            this.lblNaamLeerling.TabIndex = 0;
+            this.lblNaamLeerling.Text = "Naam leerling: ";
             // 
-            // textBox1
+            // txtNaamLeerling
             // 
-            this.textBox1.Location = new System.Drawing.Point(226, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
-            this.textBox1.TabIndex = 1;
+            this.txtNaamLeerling.Location = new System.Drawing.Point(195, 27);
+            this.txtNaamLeerling.Name = "txtNaamLeerling";
+            this.txtNaamLeerling.Size = new System.Drawing.Size(205, 29);
+            this.txtNaamLeerling.TabIndex = 1;
+            // 
+            // btnAnnuleren
+            // 
+            this.btnAnnuleren.BackColor = System.Drawing.Color.Peru;
+            this.btnAnnuleren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnnuleren.ForeColor = System.Drawing.Color.NavajoWhite;
+            this.btnAnnuleren.Location = new System.Drawing.Point(253, 76);
+            this.btnAnnuleren.Name = "btnAnnuleren";
+            this.btnAnnuleren.Size = new System.Drawing.Size(147, 58);
+            this.btnAnnuleren.TabIndex = 9;
+            this.btnAnnuleren.Text = "Annuleren";
+            this.btnAnnuleren.UseVisualStyleBackColor = false;
+            this.btnAnnuleren.Click += new System.EventHandler(this.btnAnnuleren_Click);
+            // 
+            // btnToevoegen
+            // 
+            this.btnToevoegen.BackColor = System.Drawing.Color.Peru;
+            this.btnToevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnToevoegen.ForeColor = System.Drawing.Color.NavajoWhite;
+            this.btnToevoegen.Location = new System.Drawing.Point(26, 76);
+            this.btnToevoegen.Name = "btnToevoegen";
+            this.btnToevoegen.Size = new System.Drawing.Size(147, 58);
+            this.btnToevoegen.TabIndex = 8;
+            this.btnToevoegen.Text = "Toevoegen";
+            this.btnToevoegen.UseVisualStyleBackColor = false;
             // 
             // FrmLlnToevoegen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
-            this.ClientSize = new System.Drawing.Size(679, 405);
+            this.ClientSize = new System.Drawing.Size(428, 156);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAnnuleren);
+            this.Controls.Add(this.btnToevoegen);
+            this.Controls.Add(this.txtNaamLeerling);
+            this.Controls.Add(this.lblNaamLeerling);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FrmLlnToevoegen";
@@ -69,7 +98,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblNaamLeerling;
+        private System.Windows.Forms.TextBox txtNaamLeerling;
+        private System.Windows.Forms.Button btnAnnuleren;
+        private System.Windows.Forms.Button btnToevoegen;
     }
 }

@@ -16,5 +16,10 @@ namespace UitstapParijs
         {
             InitializeComponent();
         }
+
+        private void btnAnnuleren_Click(object sender, EventArgs e)
+        {
+            Close();    
+        }
     }
 }
