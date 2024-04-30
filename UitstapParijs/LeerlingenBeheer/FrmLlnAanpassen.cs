@@ -21,5 +21,10 @@ namespace UitstapParijs
         {
             Close();
         }
+
+        private void FrmLlnAanpassen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

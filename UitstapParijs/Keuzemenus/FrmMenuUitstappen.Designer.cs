@@ -59,6 +59,7 @@
             this.btnUistapVerwijderen.TabIndex = 20;
             this.btnUistapVerwijderen.Text = "Uitstappen verwijderen";
             this.btnUistapVerwijderen.UseVisualStyleBackColor = false;
+            this.btnUistapVerwijderen.Click += new System.EventHandler(this.btnUistapVerwijderen_Click);
             // 
             // btnAanpassenUitstap
             // 
@@ -71,6 +72,7 @@
             this.btnAanpassenUitstap.TabIndex = 19;
             this.btnAanpassenUitstap.Text = "Uitstappen aanpassen";
             this.btnAanpassenUitstap.UseVisualStyleBackColor = false;
+            this.btnAanpassenUitstap.Click += new System.EventHandler(this.btnAanpassenUitstap_Click);
             // 
             // btnToevoegenUitstap
             // 
@@ -83,6 +85,7 @@
             this.btnToevoegenUitstap.TabIndex = 18;
             this.btnToevoegenUitstap.Text = "Uitstappen toevoegen";
             this.btnToevoegenUitstap.UseVisualStyleBackColor = false;
+            this.btnToevoegenUitstap.Click += new System.EventHandler(this.btnToevoegenUitstap_Click);
             // 
             // lblIntro
             // 

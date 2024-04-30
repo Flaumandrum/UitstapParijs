@@ -21,5 +21,50 @@ namespace UitstapParijs
         {
             Close();
         }
+
+        private void btnToevoegenUitstap_Click(object sender, EventArgs e)
+        {
+            // nieuw form maken 
+            FrmUitstapBeheren nieuwForm = new FrmUitstapBeheren();
+
+            // oud form hiden 
+            Hide();
+
+            // nieuw form tonen
+            nieuwForm.ShowDialog();
+
+            // oud form tonen
+            Show();
+        }
+
+        private void btnAanpassenUitstap_Click(object sender, EventArgs e)
+        {
+            // nieuw form maken 
+            FrmUitstapBeheren nieuwForm = new FrmUitstapBeheren();
+
+            // oud form hiden 
+            Hide();
+
+            // nieuw form tonen
+            nieuwForm.ShowDialog();
+
+            // oud form tonen
+            Show();
+        }
+
+        private void btnUistapVerwijderen_Click(object sender, EventArgs e)
+        {
+            // nieuw form maken 
+            FrmUitstapBeheren nieuwForm = new FrmUitstapBeheren();
+
+            // oud form hiden 
+            Hide();
+
+            // nieuw form tonen
+            nieuwForm.ShowDialog();
+
+            // oud form tonen
+            Show();
+        }
     }
 }

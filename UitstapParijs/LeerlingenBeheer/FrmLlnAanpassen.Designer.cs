@@ -112,6 +112,7 @@
             this.Name = "FrmLlnAanpassen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gegevens van de leerling aanpassen";
+            this.Load += new System.EventHandler(this.FrmLlnAanpassen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
