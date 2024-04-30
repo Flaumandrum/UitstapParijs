@@ -46,34 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmKeuzeAanpassen.cs">
+    <Compile Include="LeerlingenBeheer\FrmKeuzeAanpassen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmKeuzeAanpassen.Designer.cs">
+    <Compile Include="LeerlingenBeheer\FrmKeuzeAanpassen.Designer.cs">
       <DependentUpon>FrmKeuzeAanpassen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmKeuzeToevoegen.cs">
+    <Compile Include="LeerlingenBeheer\FrmKeuzeToevoegen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmKeuzeToevoegen.Designer.cs">
+    <Compile Include="LeerlingenBeheer\FrmKeuzeToevoegen.Designer.cs">
       <DependentUpon>FrmKeuzeToevoegen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLlnAanpassen.cs">
+    <Compile Include="LeerlingenBeheer\FrmLlnAanpassen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLlnAanpassen.Designer.cs">
+    <Compile Include="LeerlingenBeheer\FrmLlnAanpassen.Designer.cs">
       <DependentUpon>FrmLlnAanpassen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLlnToevoegen.cs">
+    <Compile Include="LeerlingenBeheer\FrmLlnToevoegen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLlnToevoegen.Designer.cs">
+    <Compile Include="LeerlingenBeheer\FrmLlnToevoegen.Designer.cs">
       <DependentUpon>FrmLlnToevoegen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLlnVerwijderen.cs">
+    <Compile Include="LeerlingenBeheer\FrmLlnVerwijderen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLlnVerwijderen.Designer.cs">
+    <Compile Include="LeerlingenBeheer\FrmLlnVerwijderen.Designer.cs">
       <DependentUpon>FrmLlnVerwijderen.cs</DependentUpon>
     </Compile>
     <Compile Include="Keuzemenus\FrmMenuLeerlingen.cs">
@@ -108,19 +108,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmKeuzeAanpassen.resx">
+    <EmbeddedResource Include="LeerlingenBeheer\FrmKeuzeAanpassen.resx">
       <DependentUpon>FrmKeuzeAanpassen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmKeuzeToevoegen.resx">
+    <EmbeddedResource Include="LeerlingenBeheer\FrmKeuzeToevoegen.resx">
       <DependentUpon>FrmKeuzeToevoegen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLlnAanpassen.resx">
+    <EmbeddedResource Include="LeerlingenBeheer\FrmLlnAanpassen.resx">
       <DependentUpon>FrmLlnAanpassen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLlnToevoegen.resx">
+    <EmbeddedResource Include="LeerlingenBeheer\FrmLlnToevoegen.resx">
       <DependentUpon>FrmLlnToevoegen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLlnVerwijderen.resx">
+    <EmbeddedResource Include="LeerlingenBeheer\FrmLlnVerwijderen.resx">
       <DependentUpon>FrmLlnVerwijderen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Keuzemenus\FrmMenuLeerlingen.resx">
