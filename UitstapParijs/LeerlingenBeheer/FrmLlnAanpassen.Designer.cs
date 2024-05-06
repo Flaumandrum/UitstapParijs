@@ -77,6 +77,7 @@
             this.btnAanpassen.TabIndex = 12;
             this.btnAanpassen.Text = "Aanpassen";
             this.btnAanpassen.UseVisualStyleBackColor = false;
+            this.btnAanpassen.Click += new System.EventHandler(this.btnAanpassen_Click);
             // 
             // txtNaamLeerling
             // 

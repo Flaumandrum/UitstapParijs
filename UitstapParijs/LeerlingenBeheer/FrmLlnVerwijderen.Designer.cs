@@ -75,6 +75,7 @@
             this.btnVerwijder.TabIndex = 10;
             this.btnVerwijder.Text = "Verwijderen";
             this.btnVerwijder.UseVisualStyleBackColor = false;
+            this.btnVerwijder.Click += new System.EventHandler(this.btnVerwijder_Click);
             // 
             // FrmLlnVerwijderen
             // 
@@ -92,6 +93,7 @@
             this.Name = "FrmLlnVerwijderen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Leerling verwijderen";
+            this.Load += new System.EventHandler(this.FrmLlnVerwijderen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

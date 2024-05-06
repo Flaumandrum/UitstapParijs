@@ -94,6 +94,7 @@
             this.btnKeuzeToevoegen.TabIndex = 14;
             this.btnKeuzeToevoegen.Text = "Keuze toevoegen";
             this.btnKeuzeToevoegen.UseVisualStyleBackColor = false;
+            this.btnKeuzeToevoegen.Click += new System.EventHandler(this.btnKeuzeToevoegen_Click);
             // 
             // FrmKeuzeToevoegen
             // 

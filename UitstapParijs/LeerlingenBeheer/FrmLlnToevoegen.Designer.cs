@@ -74,6 +74,7 @@
             this.btnToevoegen.TabIndex = 8;
             this.btnToevoegen.Text = "Toevoegen";
             this.btnToevoegen.UseVisualStyleBackColor = false;
+            this.btnToevoegen.Click += new System.EventHandler(this.btnToevoegen_Click);
             // 
             // FrmLlnToevoegen
             // 

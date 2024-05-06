@@ -28,6 +28,33 @@ namespace UitstapParijs
 
         // Functies
         /// <summary>
+        /// Stuurt een lijst met de namen van de leerlingen door
+        /// </summary>
+        /// <returns></returns>
+        static public List<String> stuurLlnDoor()
+        {
+            return _leerlingen;
+        }
+
+        /// <summary>
+        /// Stuurt een lijst met de keuze van de leerlingen door
+        /// </summary>
+        /// <returns></returns>
+        static public List<Byte> stuurKeuzeLlnDoor()
+        {
+            return _keuzeUitstap;
+        }
+
+        /// <summary>
+        /// Stuurt een lijst met de mogelijke uitstappen door
+        /// </summary>
+        /// <returns></returns>
+        static public List<String> stuurMogelijkeUitstappenDoor()
+        {
+            return _mogelijkeUitstappen;
+        }
+
+        /// <summary>
         /// Voeg leerlingen toe (index = -1), pas ze aan of verwijder (naam = null)ze.
         /// </summary>
         /// <param name="ontvIndex"></param>

@@ -21,5 +21,10 @@ namespace UitstapParijs
         {
             Close();
         }
+
+        private void btnKeuzeToevoegen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
