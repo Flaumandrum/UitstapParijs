@@ -98,22 +98,53 @@ namespace UitstapParijs
         {
             string antwoord = null;
 
-            return antwoord;
+            // code 1: Alle leerlingen 
+            if (ontvCode == 1)
+            {
+                for (int i = 0; i < _leerlingen.Count(); i++)
+                {
+                    antwoord += _leerlingen[i] +Environment.NewLine;
+                }
+            }
+            // Toon de leerlingen per uitstap
+            else if (ontvCode == 2)
+            {
+                // Overloop de uitstappen
+                for (int i = 0; i < _mogelijkeUitstappen.Count(); i++)
+                {
+                    antwoord += $"Voor uitstap: {_mogelijkeUitstappen[i]} " + Environment.NewLine;
+
+                    // overloop de leerlingen 
+                    for (int t = 0; t < _leerlingen.Count(); t++)
+                    {
+                        if (_keuzeUitstap[t] == i)
+                        {
+                            antwoord += $"   {_leerlingen[t]}" + Environment.NewLine;
+                        }
+                    }
+                }
+            }
+            // toon alle uitstappen 
+            else if (ontvCode == 3)
+            {
+                for (int i = 0; i < _mogelijkeUitstappen.Count(); i++)
+                {
+                    antwoord += $"{(i+1).ToString()}) {_mogelijkeUitstappen[i]} " + Environment.NewLine;
+
+                }
+            }
+            // toon foutmelding 
+            else
+            {
+                antwoord = "voor de juiste codes in:" + Environment.NewLine
+                    + " code 1: Alle leerlingen" + Environment.NewLine 
+                    + " code 2: leerlingen per uitstap" + Environment.NewLine 
+                    + " code 3: alle uitstappen";
+            }
+                return antwoord;
         }
 
-        static public String ToonLlnPerUitstap()
-        {
-            string antwoord = null;
-
-            return antwoord;
-        }
-
-        static public String ToonUitstappen()
-        {
-            string antwoord = null;
-
-            return antwoord;
-        }
+       
 
     }
 }
