@@ -37,6 +37,8 @@ namespace UitstapParijs
 
                 // Reset Form
                 txtNaamLeerling.Text = "";
+                txtNaamLeerling.Focus();
+
             }
             else
             {

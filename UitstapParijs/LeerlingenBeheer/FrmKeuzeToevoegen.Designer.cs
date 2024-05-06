@@ -114,6 +114,7 @@
             this.Name = "FrmKeuzeToevoegen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Keuze van de leerling toevoegen";
+            this.Load += new System.EventHandler(this.FrmKeuzeToevoegen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -26,5 +26,41 @@ namespace UitstapParijs
         {
 
         }
+
+        private void VulCmbLln()
+        {
+            // Haal de lijst op met de namen van de leerlingen 
+            List<string> ontvLijst = Program.stuurLlnDoor();
+
+            // Maak de combobox leeg
+            cmbKies.Items.Clear();
+
+            // Vul de combobox met de nieuwe items
+            foreach (string s in ontvLijst)
+            {
+                cmbKies.Items.Add(s);
+            }
+        }
+
+        private void VulCmbKeuze()
+        {
+            // Haal de lijst op met de namen van de leerlingen 
+            List<string> ontvLijst = Program.stuurMogelijkeUitstappenDoor();
+
+            // Maak de combobox leeg
+            cmbKiesKeuze.Items.Clear();
+
+            // Vul de combobox met de nieuwe items
+            foreach (string s in ontvLijst)
+            {
+                cmbKiesKeuze.Items.Add(s);
+            }
+        }
+
+        private void FrmKeuzeToevoegen_Load(object sender, EventArgs e)
+        {
+            VulCmbKeuze();
+            VulCmbLln();
+        }
     }
 }

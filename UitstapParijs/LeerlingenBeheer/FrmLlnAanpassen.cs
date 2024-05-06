@@ -73,5 +73,10 @@ namespace UitstapParijs
                 MessageBox.Show("U heeft niets ingevuld", "Fout", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void cmbKies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtNaamLeerling.Text = cmbKies.Text;
+        }
     }
 }
