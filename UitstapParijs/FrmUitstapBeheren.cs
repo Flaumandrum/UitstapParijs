@@ -27,6 +27,8 @@ namespace UitstapParijs
         {
             string ontvActie = FrmMenuUitstappen._actie;
 
+            VulCmbUitstap();
+
             if (ontvActie == "Toevoegen")
             {
                 lblKies.Visible = false;
@@ -59,7 +61,7 @@ namespace UitstapParijs
         {
             if (btnAanpassen.Text == "Toevoegen")
             {
-                // ga na of de gegevens zijn ingevuls
+                // ga na of de gegevens zijn ingevuld
                 if(txtNaamUitstap.Text != "")
                 {
                     string naamUitstap = txtNaamUitstap.Text;
@@ -81,27 +83,69 @@ namespace UitstapParijs
             }
             else if (btnAanpassen.Text == "Aanpassen")
             {
-                // ga na of de gegevens zijn ingevuls
+                // ga na of de gegevens zijn ingevuld
                 if (txtNaamUitstap.Text != "" && cmbKies.SelectedIndex != -1)
                 {
+                    int index = cmbKies.SelectedIndex;
+                    string naamUitstap = txtNaamUitstap.Text;
+
+                    Program.BewerkenUitstap(index, naamUitstap);
+
+                    // form restetten
+                    cmbKies.SelectedIndex = -1;
+                    cmbKies.Text = "";
+                    txtNaamUitstap.Text = "";
+                    VulCmbUitstap();
+
+                    // stuur bevestiging 
+                    MessageBox.Show("Deze uitstap werd aangepast", "Great Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
                 {
+
                     // foutmelding
+                    MessageBox.Show("U heeft niet alles ingevuld", "Fout", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
             }
             else
             {
-                // ga na of de gegevens zijn ingevuls
+                // ga na of de gegevens zijn ingevuld
                 if (cmbKies.SelectedIndex != -1)
                 {
+                    int index = cmbKies.SelectedIndex;
+
+                    Program.BewerkenUitstap(index, null);
+
+                    // form restetten
+                    cmbKies.SelectedIndex = -1;
+                    cmbKies.Text = "";
+                    VulCmbUitstap();
+
+                    // stuur bevestiging 
+                    MessageBox.Show("Deze uitstap werd verwijderd", "Great Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
                 {
+
                     // foutmelding
+                    MessageBox.Show("U heeft niet alles ingevuld", "Fout", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
+            }
+        }
+    
+        private void VulCmbUitstap()
+        {
+            List<String> lijstUitstappen = Program.stuurMogelijkeUitstappenDoor();
+
+            cmbKies.Items.Clear();
+
+            foreach (String s in lijstUitstappen )
+            {
+                cmbKies.Items.Add( s );
             }
         }
     }

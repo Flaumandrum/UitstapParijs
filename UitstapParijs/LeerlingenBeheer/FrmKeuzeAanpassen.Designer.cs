@@ -60,6 +60,7 @@
             this.btnKeuzeAanpassen.TabIndex = 20;
             this.btnKeuzeAanpassen.Text = "Keuze aanpassen";
             this.btnKeuzeAanpassen.UseVisualStyleBackColor = false;
+            this.btnKeuzeAanpassen.Click += new System.EventHandler(this.btnKeuzeAanpassen_Click);
             // 
             // cmbKiesKeuze
             // 
@@ -113,6 +114,7 @@
             this.Name = "FrmKeuzeAanpassen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aanpassen keuze van leerling";
+            this.Load += new System.EventHandler(this.FrmKeuzeAanpassen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.grbKeuze = new System.Windows.Forms.GroupBox();
-            this.rbAlleLln = new System.Windows.Forms.RadioButton();
-            this.rbLlnPerUistap = new System.Windows.Forms.RadioButton();
             this.rbAlleUitstappen = new System.Windows.Forms.RadioButton();
+            this.rbLlnPerUistap = new System.Windows.Forms.RadioButton();
+            this.rbAlleLln = new System.Windows.Forms.RadioButton();
             this.btnAnnuleren = new System.Windows.Forms.Button();
             this.btnTonen = new System.Windows.Forms.Button();
             this.txtToon = new System.Windows.Forms.TextBox();
@@ -49,16 +49,16 @@
             this.grbKeuze.TabIndex = 0;
             this.grbKeuze.TabStop = false;
             // 
-            // rbAlleLln
+            // rbAlleUitstappen
             // 
-            this.rbAlleLln.AutoSize = true;
-            this.rbAlleLln.Location = new System.Drawing.Point(7, 29);
-            this.rbAlleLln.Name = "rbAlleLln";
-            this.rbAlleLln.Size = new System.Drawing.Size(196, 28);
-            this.rbAlleLln.TabIndex = 0;
-            this.rbAlleLln.TabStop = true;
-            this.rbAlleLln.Text = "Toon alle leerlingen";
-            this.rbAlleLln.UseVisualStyleBackColor = true;
+            this.rbAlleUitstappen.AutoSize = true;
+            this.rbAlleUitstappen.Location = new System.Drawing.Point(7, 97);
+            this.rbAlleUitstappen.Name = "rbAlleUitstappen";
+            this.rbAlleUitstappen.Size = new System.Drawing.Size(198, 28);
+            this.rbAlleUitstappen.TabIndex = 2;
+            this.rbAlleUitstappen.TabStop = true;
+            this.rbAlleUitstappen.Text = "Toon alle uitstappen";
+            this.rbAlleUitstappen.UseVisualStyleBackColor = true;
             // 
             // rbLlnPerUistap
             // 
@@ -71,16 +71,16 @@
             this.rbLlnPerUistap.Text = "Toon leerlingen per uitstap";
             this.rbLlnPerUistap.UseVisualStyleBackColor = true;
             // 
-            // rbAlleUitstappen
+            // rbAlleLln
             // 
-            this.rbAlleUitstappen.AutoSize = true;
-            this.rbAlleUitstappen.Location = new System.Drawing.Point(7, 97);
-            this.rbAlleUitstappen.Name = "rbAlleUitstappen";
-            this.rbAlleUitstappen.Size = new System.Drawing.Size(198, 28);
-            this.rbAlleUitstappen.TabIndex = 2;
-            this.rbAlleUitstappen.TabStop = true;
-            this.rbAlleUitstappen.Text = "Toon alle uitstappen";
-            this.rbAlleUitstappen.UseVisualStyleBackColor = true;
+            this.rbAlleLln.AutoSize = true;
+            this.rbAlleLln.Location = new System.Drawing.Point(7, 29);
+            this.rbAlleLln.Name = "rbAlleLln";
+            this.rbAlleLln.Size = new System.Drawing.Size(196, 28);
+            this.rbAlleLln.TabIndex = 0;
+            this.rbAlleLln.TabStop = true;
+            this.rbAlleLln.Text = "Toon alle leerlingen";
+            this.rbAlleLln.UseVisualStyleBackColor = true;
             // 
             // btnAnnuleren
             // 
@@ -106,6 +106,7 @@
             this.btnTonen.TabIndex = 14;
             this.btnTonen.Text = "Tonen";
             this.btnTonen.UseVisualStyleBackColor = false;
+            this.btnTonen.Click += new System.EventHandler(this.btnTonen_Click);
             // 
             // txtToon
             // 
@@ -114,6 +115,7 @@
             this.txtToon.Multiline = true;
             this.txtToon.Name = "txtToon";
             this.txtToon.ReadOnly = true;
+            this.txtToon.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtToon.Size = new System.Drawing.Size(507, 206);
             this.txtToon.TabIndex = 16;
             // 

@@ -21,5 +21,34 @@ namespace UitstapParijs
         {
             Close();
         }
+
+        private void btnTonen_Click(object sender, EventArgs e)
+        {
+            // tekstbox leegmaken 
+            txtToon.Text = "";
+
+
+            if(rbAlleLln.Checked)
+            {
+
+                txtToon.Text = Program.ToonLln(1);
+
+            }
+            else if (rbLlnPerUistap.Checked)
+            {
+                txtToon.Text = Program.ToonLln(2);
+
+            }
+            else if(rbAlleUitstappen.Checked)
+            {
+                txtToon.Text = Program.ToonLln(3);
+            }
+            else
+            {
+                // foutmelding 
+                MessageBox.Show("U moet eerst een keuze maken ", "fout", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
     }
 }

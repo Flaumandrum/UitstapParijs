@@ -46,5 +46,7 @@ namespace UitstapParijs
                 MessageBox.Show("U heeft niets ingevuld", "Fout", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }
