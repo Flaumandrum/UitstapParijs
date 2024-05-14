@@ -19,7 +19,7 @@ namespace UitstapParijs
             Application.Run(new FrmStartmenu());
         }
 
-        // Velden
+        // Velden 
         static List<String> _leerlingen = new List<string>();
         static List<Byte> _keuzeUitstap = new List<Byte>();
         static List<String> _mogelijkeUitstappen = new List<string> {"Geen Keuze"};

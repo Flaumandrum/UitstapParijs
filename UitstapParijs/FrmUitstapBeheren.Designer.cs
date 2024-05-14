@@ -60,6 +60,7 @@
             this.btnAanpassen.TabIndex = 18;
             this.btnAanpassen.Text = "Aanpassen";
             this.btnAanpassen.UseVisualStyleBackColor = false;
+            this.btnAanpassen.Click += new System.EventHandler(this.btnAanpassen_Click);
             // 
             // txtNaamUitstap
             // 
@@ -112,6 +113,7 @@
             this.Name = "FrmUitstapBeheren";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uitstappen beheren:";
+            this.Load += new System.EventHandler(this.FrmUitstapBeheren_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

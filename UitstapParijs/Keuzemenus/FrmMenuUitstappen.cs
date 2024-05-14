@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace UitstapParijs
 {
+
+    
     public partial class FrmMenuUitstappen : Form
     {
+        // Velden 
+        static public string _actie = "";
+
         public FrmMenuUitstappen()
         {
             InitializeComponent();
         }
+
+      
 
         private void btnAnnuleren_Click(object sender, EventArgs e)
         {
@@ -24,6 +31,9 @@ namespace UitstapParijs
 
         private void btnToevoegenUitstap_Click(object sender, EventArgs e)
         {
+            // Actie aanpassen 
+            _actie = "Toevoegen";
+
             // nieuw form maken 
             FrmUitstapBeheren nieuwForm = new FrmUitstapBeheren();
 
@@ -39,6 +49,9 @@ namespace UitstapParijs
 
         private void btnAanpassenUitstap_Click(object sender, EventArgs e)
         {
+            // Actie aanpassen 
+            _actie = "Aanpassen";
+
             // nieuw form maken 
             FrmUitstapBeheren nieuwForm = new FrmUitstapBeheren();
 
@@ -54,6 +67,9 @@ namespace UitstapParijs
 
         private void btnUistapVerwijderen_Click(object sender, EventArgs e)
         {
+            // Actie aanpassen 
+            _actie = "Verwijderen";
+
             // nieuw form maken 
             FrmUitstapBeheren nieuwForm = new FrmUitstapBeheren();
 
